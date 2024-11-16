@@ -1,0 +1,23 @@
+.logoContainer{
+    width: 19%;
+}
+.logo{
+    width: 70%;
+}
+
+.btn{
+    background-color: #ba9f67;
+    color: #000;
+    padding: 0.7rem 1rem;
+    border-radius: 0%;
+    border: none !important;
+    outline: none !important;
+}
+.btn:hover{
+    background-color: #fff !important;
+    color: #f0d195 !important;
+    outline: none !important;
+}
+.nav-item .nav-link:hover{
+    color: #f0d195 !important;
+}
