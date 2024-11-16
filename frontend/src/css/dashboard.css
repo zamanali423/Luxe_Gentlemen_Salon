@@ -1,0 +1,160 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 5rem auto 0 auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .order-table {
+    margin-top: 20px;
+  }
+  
+  .order-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-table th, .order-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .order-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .order-table td {
+    vertical-align: middle;
+  }
+  
+  .order-table td button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .order-table td button:first-child {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .order-table td button:last-child {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+ 
+
+  /* send message  */
+
+  /* General Button Styling */
+.dashboard-container .btn {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Logout Button */
+.btn-logout {
+  float: right;
+  margin-bottom: 0.5rem;
+}
+
+/* Input Field Styling */
+.dashboard-container input[type="text"], input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.dashboard-container input[type="text"]::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Image Preview Styling */
+.dashboard-container a {
+  display: block;
+  margin-top: 35px;
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Layout for Send Message Section */
+.sendMsg {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  margin-bottom: 1.5rem;
+}
+
+/* Button Alignment */
+.sendMsg button {
+  align-self: flex-start;
+  padding: 10px 15px;
+}
+
+/* Dashboard and Feedback Buttons Container */
+.dashboard-feedback-btns {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  /* Larger screen adjustments */
+  /* .sendMsg {
+    flex-direction: row;
+    align-items: center;
+  } */
+
+  .sendMsg input[type="text"] {
+    flex: 1;
+    margin-right: 0.5rem;
+  }
+
+  .sendMsg button {
+    flex: none;
+  }
+
+  .dashboard-feedback-btns {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Adjustments for mobile */
+ .dashboard-container .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+ .dashboard-container input[type="text"] {
+    width: 100%;
+  }
+
+ .dashboard-container img {
+    width: 50%; /* Adjust image size for mobile */
+  }
+}
+
+  

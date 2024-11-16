@@ -1,0 +1,102 @@
+/* Base styles for the container */
+.teamContainer {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 3rem;
+}
+
+.team h1 {
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.team .card {
+  border: none;
+  border-radius: 50%; /* Makes the card circular */
+  overflow: hidden;
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  margin: auto;
+  transition: transform 0.3s ease; /* Animation on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team .card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Card background image styles */
+.team .card-with-bg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* height: 100%; */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.team .card .card-body {
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay on bottom */
+  color: #f0d195;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Responsive layout for different screen sizes */
+@media (max-width: 768px) {
+  .team h1 {
+    font-size: 2rem;
+  }
+
+  .team .card {
+    max-width: 244px;
+    height: 252px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team h1 {
+    font-size: 1.8rem;
+  }
+
+  .team .card {
+    max-width: 218px;
+    height: 224px;
+  }
+}
+
+/* Responsive layout for smaller screens (320px and up) */
+@media (min-width: 320px) and (max-width: 576px) {
+  .team .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row !important;
+  }
+  
+  .team .col {
+    flex: 0 0 50%; /* Two columns per row */
+    max-width: 50%;
+  }
+
+  .team .card {
+    max-width: 100%;
+    height: 130px;
+  }
+  .team .card .card-body{
+    bottom: -8px !important;
+  }
+  .team .card .card-body>h5{
+    font-size: 1rem !important;
+  }
+}
+

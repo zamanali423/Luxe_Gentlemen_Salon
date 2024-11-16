@@ -1,0 +1,78 @@
+/* NotFoundPage.css */
+
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .not-found-content {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .not-found-title {
+    font-size: 100px;
+    color: #ff6347;
+    margin: 0;
+  }
+  
+  .not-found-text {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f0d195;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #b9a276;
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .not-found-title {
+      font-size: 80px;
+    }
+  
+    .not-found-text {
+      font-size: 18px;
+    }
+  
+    .home-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .not-found-title {
+      font-size: 60px;
+    }
+  
+    .not-found-text {
+      font-size: 16px;
+    }
+  
+    .home-button {
+      font-size: 13px;
+      padding: 8px 18px;
+    }
+  }
+  

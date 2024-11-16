@@ -1,0 +1,72 @@
+/* orderTable.css */
+
+.order-table {
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  }
+  
+  .order-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .order-table th, .order-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .order-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .order-table td {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .order-table td:first-child, .order-table th:first-child {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .order-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .order-table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .order-table td button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-table td button:hover {
+    background-color: #ddd;
+  }
+  
+  .order-table td button:first-child {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .order-table td button:last-child {
+    background-color: #f44336;
+    color: white;
+    border-radius: 4px;
+    margin-left: 5px;
+  }
+  

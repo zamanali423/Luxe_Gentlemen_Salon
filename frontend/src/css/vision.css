@@ -1,0 +1,152 @@
+.visionContainer {
+  font-family: 'Arial', sans-serif;
+}
+
+.vision-section {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+
+.vision-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  width: 77%;
+  background-color: #2e2e2e;
+  border-radius: 71px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  position: relative;
+  margin-right: 8%;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.owner-image {
+    border-radius: 50%;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border: 1.5px solid #d4af37;
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    transform: translateX(-50%);
+}
+
+.text-container {
+  flex: 3;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #d4af37; /* Golden color for headings */
+}
+
+.text-container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #d4af37;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: justify;
+}
+
+@media (min-width: 1380px) {
+  .owner-image {
+    top: 8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .vision-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .owner-image {
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    left: 44%;
+  }
+
+  .text-container {
+    padding: 20px;
+  }
+
+  .text-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-container h4 {
+    font-size: 1.4rem;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:768px){
+  .vision-container {
+    width: 100%;
+  }
+  .owner-image {
+    width: 100%;
+    left: 44%;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-container h2 {
+    font-size: 1.6rem;
+  }
+  
+  .text-container h4 {
+    font-size: 1.2rem;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+  }
+  
+  .owner-image {
+    width: 100%;
+    left: 47%;
+  }
+
+  .text-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-section {
+    padding: 0;
+  }
+  .vision-container{
+    background-color: black !important;
+    margin-right: 0%;
+    border-radius: 0%;
+  }
+}

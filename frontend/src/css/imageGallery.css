@@ -1,0 +1,77 @@
+
+/* Image Gallery Styles */
+.mainImage {
+  padding: 2rem 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.mainImage h1 {
+  text-align: right;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.mainImage .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mainImage .col-lg-4,
+.col-md-12 {
+  flex: 0.12 1 30%;
+  margin-bottom: 2rem;
+}
+
+.mainImage img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainImage img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.mainImage .btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.mainImage .btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.mainImage .btn:hover {
+  transform: translateY(-5px);
+}
+
+.mainImage p{
+color: #777c81;
+text-align: center;
+font-size: 0.9rem;
+}
+.mainImage h5{
+text-align: center;
+font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .mainImage .row {
+    flex-direction: column;
+  }
+
+  .mainImage h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .mainImage .btn {
+    display: block;
+    margin: 2rem auto;
+  }
+}

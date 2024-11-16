@@ -1,0 +1,372 @@
+
+.appointment {
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(47, 100%, 98%);
+    color: #2d2d2d;
+    padding-top: 10rem;
+  }
+  .appointment h1,p{
+    text-align: center;
+    color: #000;
+  }
+  
+  .appointment .container {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .barber-label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #a2884d;
+  }
+  
+  .barber-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .calendar-section {
+    margin: 20px 0;
+  }
+  
+  .calendar-label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #a2884d;
+    margin-bottom: 10px;
+  }
+  
+  .calendar {
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f4ed;
+  }
+  
+  .date-picker {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  .price-section {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #a2884d;
+  }
+  .price-section p{
+    color: #000 !important;
+  }
+  .calPara{
+    color: #000 !important;
+  }
+  
+  .next-button {
+    margin-top: 20px;
+  }
+  
+  .btn-next {
+    background-color: #a2884d;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-next:hover {
+    background-color: #b59752;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .calendar-section {
+      margin: 15px 0;
+    }
+  
+    .price-section,
+    .barber-selection,
+    .next-button {
+      margin-top: 15px;
+    }
+  
+    .barber-dropdown,
+    .date-picker {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .btn-next {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+    .singleCard{
+      width: 86% !important;
+      height: auto;
+    }
+    
+  }
+  
+
+  /* Select Field */
+.barber-dropdown {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #a2884d;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: #f8f4ed;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.barber-dropdown:focus {
+    border-color: #8c7b4c;
+    outline: none;
+}
+
+/* Calendar Section */
+.calendar-section {
+  margin: auto;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f8f4ed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 65%;
+}
+.timing{
+  width: 65%;
+  margin: auto;
+}
+
+
+/* General Styles for Price Section */
+.price-section {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #a2884d;
+}
+
+.price-section p {
+    color: #000 !important;
+}
+
+/* Button Styling */
+.btn-next {
+    background-color: #a2884d;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-next:hover {
+    background-color: #b59752;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .barber-dropdown,
+    .react-time-picker {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .btn-next {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* appointmentDetails.css */
+
+.appointmentDetail {
+  background-color: #f8f4ed;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 65%;
+  }
+  
+  .appointmentDetail h2 {
+    color: #2d2d2d; /* Dark text for headings */
+    margin-bottom: 15px; /* Space below heading */
+    font-size: 1.5rem; /* Font size for the heading */
+  }
+  
+  .cutting-info {
+    margin: 10px 0; /* Margin around the info section */
+  }
+  
+  .service-title {
+    font-weight: bold; /* Emphasize the service title */
+    color: #a2884d; /* Color for service title */
+    font-size: 1.3rem; /* Font size for service title */
+  }
+  
+  .barber-name {
+    color: #333; /* Darker color for barber name */
+  }
+  
+  .appointment-date,
+  .appointment-time {
+    color: #666; /* Lighter color for date and time */
+    margin: 5px 0; /* Space around date and time */
+    font-size: 1.1rem; /* Font size for date and time */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .appointmentDetail {
+      padding: 15px; /* Reduced padding on smaller screens */
+    }
+  
+    .appointmentDetail h2 {
+      font-size: 1.3rem; /* Adjust heading size */
+    }
+  
+    .service-title {
+      font-size: 1.2rem; /* Adjust service title size */
+    }
+    
+    .appointment-date,
+    .appointment-time {
+      font-size: 1rem; /* Adjust date and time size */
+    }
+    .appointment p{
+      font-size: 0.8rem;
+    }
+  }
+  
+
+
+
+  /* only card  */
+
+  /* Main container for card section */
+.mainSingle {
+  padding: 1rem;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+/* Single card styling */
+.singleCard {
+  width: 52%;
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.singleCard:hover {
+  transform: translateY(-10px); /* Lifts the card slightly on hover */
+}
+
+/* Card with background image */
+.mainSingle .card-with-bg {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 400px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.mainSingle .card-with-bg:hover {
+  transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+}
+
+.mainSingle .card-with-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with higher opacity */
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.mainSingle .card-with-bg:hover:before {
+  opacity: 0.7; /* Overlay becomes more visible on hover */
+}
+
+
+/* Card body styling */
+.mainSingle .card-body {
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+  /* background-color: rgba(255, 255, 255, 0.9); Light transparent background for content */
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  margin-top: 23rem;
+}
+
+.mainSingle .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.mainSingle .card-text {
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Hover effect for card title */
+.card-title:hover {
+  color: #a2884d; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainSingle .card-with-bg {
+    height: 200px; /* Adjust card height for smaller screens */
+  }
+
+  .mainSingle .card-title {
+    font-size: 1.2rem; /* Adjust title font size */
+  }
+
+  .mainSingle .card-text {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+  
+}

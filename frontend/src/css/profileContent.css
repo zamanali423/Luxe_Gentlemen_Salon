@@ -1,0 +1,51 @@
+/* Responsive and Professional UI/UX Styling for Profile Content */
+.mainProfile {
+    width: 90%;
+    max-width: 1200px;
+    margin: 15px auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .mainProfile h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+  
+  .mainProfile p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #777c81;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .mainProfile {
+      padding: 1.5rem;
+    }
+  
+    .mainProfile h2 {
+      font-size: 2rem;
+    }
+  
+    .mainProfile p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mainProfile h2 {
+      font-size: 1.1rem;
+    }
+  
+    .mainProfile p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+  }
+  

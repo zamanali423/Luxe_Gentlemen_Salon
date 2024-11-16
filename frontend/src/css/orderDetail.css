@@ -1,0 +1,162 @@
+
+  
+  /* Main container */
+  .mainDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    /* background-color: #f7f7f7; */
+  }
+  
+  /* Container for the content */
+  .mainDetail .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Order details section */
+  .order-details {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .order-details div {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .order-details div:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Product details table */
+  .product-details {
+    margin-bottom: 20px;
+  }
+  
+  .product-details table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-details th,
+  .product-details td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .product-details th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .product-details td {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  /* Footer styles */
+  .footer {
+    text-align: right;
+  }
+  
+  .footer p {
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 5px;
+  }
+
+  .product-info {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .product-item img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .product-details h4 {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mainDetail .container {
+      padding: 20px;
+    }
+  
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .order-details div {
+      font-size: 0.95rem;
+    }
+  
+    .product-details th,
+    .product-details td {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mainDetail .container {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+  
+    .order-details div {
+      font-size: 0.9rem;
+    }
+  
+    .product-details th,
+    .product-details td {
+      padding: 6px;
+    }
+  
+    .footer p {
+      font-size: 1rem;
+    }
+  }
+  

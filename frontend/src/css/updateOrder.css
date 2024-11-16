@@ -1,0 +1,88 @@
+/* Container Styling */
+.order-form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+ .order-form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  /* Form Styling */
+  .order-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .order-form .form-group {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .order-form .form-group {
+      width: 48%;
+    }
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ba9f67;
+    color: #000;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #deb157;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .order-form .form-group {
+      width: 100%;
+    }
+  
+    .order-form-container {
+      padding: 1rem;
+    }
+  }
+  
